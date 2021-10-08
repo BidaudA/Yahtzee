@@ -22,5 +22,19 @@ namespace YahtzeeTests
             
         }
 
+        [Theory]
+        [InlineData(new[] { 1, 2, 3, 4, 5 }, 1)]
+        [InlineData(new[] { 1, 2, 1, 4, 5 }, 2)]
+        [InlineData(new[] { 1, 2, 1, 4, 1 }, 3)]
+        [InlineData(new[] { 2, 2, 3, 4, 5 }, 0)]
+        public void CalculatedOnes(int[] roll, int expectedScore)
+        {
+            var game = new Game();
+            var score = game.CalculateOnes(roll);
+
+            Assert.Equal(expectedScore, score);
+
+        }
+
     }
 }
