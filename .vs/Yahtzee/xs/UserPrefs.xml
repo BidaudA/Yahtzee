@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{6E8EFE50-3D8F-49AE-AD9D-5D594A32E8CE}|Default">
+  <MonoDevelop.Ide.ItemProperties.Yahtzee PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="YahtzeeTests/GameTests.cs">
+    <Files>
+      <File FileName="YahtzeeTests/GameTests.cs" Line="10" Column="13" />
+      <File FileName="Yahtzee/Dice.cs" Line="2" Column="25" />
+      <File FileName="Yahtzee/Models/Roll.cs" Line="8" Column="80" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Yahtzee" expanded="True" selected="True">
+            <Node name="Yahtzee" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="YahtzeeTests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
