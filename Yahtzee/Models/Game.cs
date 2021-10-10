@@ -22,7 +22,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateTwos(int[] roll)
+        public int CalculateTwos(int[] roll)
         {
             var result = 0;
 
@@ -38,7 +38,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateThrees(int[] roll)
+        public int CalculateThrees(int[] roll)
         {
             var result = 0;
             foreach (var item in roll)
@@ -54,7 +54,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateFours(int[] roll)
+        public int CalculateFours(int[] roll)
         {
             var result = 0;
             foreach (var item in roll)
@@ -70,7 +70,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateFives(int[] roll)
+        public int CalculateFives(int[] roll)
         {
             var result = 0;
             foreach (var item in roll)
@@ -86,7 +86,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateSix(int[] roll)
+        public int CalculateSix(int[] roll)
         {
             var result = 0;
             foreach (var item in roll)
@@ -95,6 +95,25 @@ namespace Yahtzee.Models
                 if(item == 6)
                 {
                     result = result + 6;
+                }
+
+            }
+
+            return result;
+        }
+
+        public int CalculateNumber(int[] roll, int number)
+        {
+            var result = 0;
+
+            foreach (var item in roll)
+            {
+
+                if (item == number)
+                {
+
+                    result = result + number;
+
                 }
 
             }
