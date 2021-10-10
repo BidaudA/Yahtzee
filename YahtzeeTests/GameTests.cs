@@ -36,6 +36,20 @@ namespace YahtzeeTests
 
         }
 
+        [Theory]
+        [InlineData(new[] { 2, 2, 2, 3, 3 }, 12, 2)]
+        [InlineData(new[] { 3, 3, 3, 5, 1 }, 15, 3)]
+        [InlineData(new[] { 5, 5, 5, 4, 3 }, 22, 5)]
+        public void ThreeOfAKind(int[] roll, int expectedScore, int number)
+        {
+
+            var game = new Game();
+            var score = game.CalculateThreeOfAKind(roll, number);
+
+            Assert.Equal(expectedScore, score);
+
+        }
+
 
     }
 }

@@ -28,7 +28,7 @@ namespace Yahtzee.Models
             return result;
         }
 
-        public object CalculateFourOfAKind(int[] roll, int number)
+        public int CalculateFourOfAKind(int[] roll, int number)
         {
             var count = roll.Where(n => n.Equals(number)).Select(n => n).Count();
             var result = 0;
@@ -42,5 +42,6 @@ namespace Yahtzee.Models
             return result;
 
         }
+
     }
 }
