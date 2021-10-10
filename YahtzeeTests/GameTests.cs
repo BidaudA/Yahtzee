@@ -23,14 +23,14 @@ namespace YahtzeeTests
         }
 
         [Theory]
-        [InlineData(new[] {2, 2, 2, 2, 3}, 11 )]
-        [InlineData(new[] { 3, 3, 3, 3, 1 }, 13)]
-        [InlineData(new[] { 5, 5, 5, 5, 3 }, 23)]
-        public void FourOfAKind(int[] roll, int expectedScore)
+        [InlineData(new[] {2, 2, 2, 2, 3}, 11, 2)]
+        [InlineData(new[] { 3, 3, 3, 3, 1 }, 13, 3)]
+        [InlineData(new[] { 5, 5, 5, 5, 3 }, 23, 5)]
+        public void FourOfAKind(int[] roll, int expectedScore, int number)
         {
 
             var game = new Game();
-            var score = game.CalculateFourOfAKind();
+            var score = game.CalculateFourOfAKind(roll, number);
 
             Assert.Equal(expectedScore, score);
 
