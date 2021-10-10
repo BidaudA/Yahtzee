@@ -43,5 +43,18 @@ namespace Yahtzee.Models
 
         }
 
+        public int CalculateThreeOfAKind(int[] roll, int number)
+        {
+
+            var count = roll.Where(n => n.Equals(number)).Select(n => n).Count();
+            var result = 0;
+
+            if (count == 3)
+            {
+                result = roll.Sum();
+            }
+
+            return result;
+        }
     }
 }
