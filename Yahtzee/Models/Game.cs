@@ -54,5 +54,53 @@ namespace Yahtzee.Models
             return result;
         }
 
+        public object CalculateFours(int[] roll)
+        {
+            var result = 0;
+            foreach (var item in roll)
+            {
+
+                if(item == 4)
+                {
+                    result = result + 4;
+                }
+
+            }
+
+            return result;
+        }
+
+        public object CalculateFives(int[] roll)
+        {
+            var result = 0;
+            foreach (var item in roll)
+            {
+
+                if(item == 5)
+                {
+                    result = result + 5;
+                }
+
+            }
+
+            return result;
+        }
+
+        public object CalculateSix(int[] roll)
+        {
+            var result = 0;
+            foreach (var item in roll)
+            {
+
+                if(item == 6)
+                {
+                    result = result + 6;
+                }
+
+            }
+
+            return result;
+        }
+
     }
 }
